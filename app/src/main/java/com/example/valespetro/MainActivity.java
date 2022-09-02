@@ -21,6 +21,9 @@ import com.journeyapps.barcodescanner.ScanOptions;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String url = "https://vales.grupopetromar.com/apirest/indexapp.php" ;
+
+
     Button btnScan, btnContinuar, btnCerrarSesion;
     EditText txtResultado;
     SharedPreferences sp;

@@ -132,7 +132,7 @@ public class Datos extends AppCompatActivity {
 
 
         RequestQueue MyRequestQueue = Volley.newRequestQueue(this);
-        String url = "http://vales.grupopetromar.com/apirest/indexapp.php"; // <----enter your post url here
+        String url = MainActivity.url; // <----enter your post url here
         StringRequest MyStringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -187,7 +187,7 @@ public class Datos extends AppCompatActivity {
 
 
         RequestQueue MyRequestQueue = Volley.newRequestQueue(this);
-        String url = "http://vales.grupopetromar.com/apirest/indexapp.php"; // <----enter your post url here
+        String url = MainActivity.url; // <----enter your post url here
         StringRequest MyStringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
