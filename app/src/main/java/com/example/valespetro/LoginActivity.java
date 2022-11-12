@@ -219,8 +219,27 @@ public class LoginActivity extends AppCompatActivity {
 
 
                 } catch (JSONException e) {
-                    Toast.makeText(LoginActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(LoginActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
+                    dialog.show();
+                    TextView tituloDialog = dialog.findViewById(R.id.tituloDialog);
+                    TextView subtituloDialog = dialog.findViewById(R.id.subtituloDialog);
+                    ImageView iconoDialog = dialog.findViewById(R.id.iconoDialog);
+
+
+                    tituloDialog.setText("Alerta");
+                    iconoDialog.setImageDrawable(ContextCompat.getDrawable(LoginActivity.this, R.drawable.ic_baseline_error_24));
+                    subtituloDialog.setText("Contraseña Incorrecta");
+
+                    Button Okay = dialog.findViewById(R.id.btn_okay);
+
+
+                    Okay.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dialog.dismiss();
+                        }
+                    });
 
                 }
 

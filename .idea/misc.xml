@@ -18,11 +18,13 @@
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/drawable/spinner_bg.xml" value="0.2203125" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/drawable/spinner_style.xml" value="0.25" />
-        <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/activity_datos.xml" value="0.33" />
+        <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout-v21/activity_login.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/activity_datos.xml" value="0.5" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/custom_dialog_continuar.xml" value="0.33" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/spinner_bg.xml" value="0.33" />
+        <entry key="..\:/Users/desarrollo/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.10416666666666667" />
         <entry key="..\:/Users/desarrollo/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.5" />
       </map>
     </option>

@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -77,7 +79,7 @@ public class Datos extends AppCompatActivity {
                 // progressBar = ProgressDialog.show(LoginActivity.this,"Cargando","Iniciando sesión",true);
                 Intent i = new Intent(LoginActivity.this, MainActivity.class );
                 startActivity(i);*/
-
+                btnConciliar.setEnabled(false);
                 QuemarDatosVale();
 
             }
@@ -154,7 +156,41 @@ public class Datos extends AppCompatActivity {
                         TxtPegasus.setText(datoscliente.getString("idpegasus"));
 
                         System.out.print(datoscliente.getString("idpegasus"));
+                        System.out.print(datoscliente.getString("cantidad"));
+
+
+                        if (datoscliente.getString("cantidad").equals(0)) {
+                            ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+
+                            if (networkInfo != null && networkInfo.isConnected()) {
+                                Log.d("MIAPP", "Estás online");
+
+                                Log.d("MIAPP", " Estado actual: " + networkInfo.getState());
+
+                                if (networkInfo.getType() == ConnectivityManager.TYPE_WIFI) {
+                                    // Estas conectado a un Wi-Fi
+                                    Log.d("MIAPP", " Nombre red Wi-Fi: " + networkInfo.getExtraInfo());
+                                } else if (networkInfo.getType() == ConnectivityManager.TYPE_MOBILE){
+
+                                    Log.d("MIAPP", " Nombre red: " + networkInfo.getExtraInfo());
+                                }
+
+                            } else {
+                                Log.d("MIAPP", "Estás offline");
+                                dialog.show();
+                                TextView tituloDialog = dialog.findViewById(R.id.tituloDialog);
+                                TextView subtituloDialog = dialog.findViewById(R.id.subtituloDialog);
+                                ImageView iconoDialog = dialog.findViewById(R.id.iconoDialog);
+
+                                tituloDialog.setText("Alerta");
+                                iconoDialog.setImageDrawable(ContextCompat.getDrawable(Datos.this, R.drawable.ic_baseline_error_24));
+                                subtituloDialog.setText("No estas conectado a internet");
+
+                            }
+                        }
                     }
+
 
                 } catch (JSONException e) {
                     Toast.makeText(Datos.this, e.toString(), Toast.LENGTH_SHORT).show();
@@ -167,6 +203,12 @@ public class Datos extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 //This code is executed if there is an error.
+                //retornar a main
+                Intent i = new Intent(Datos.this, MainActivity.class );
+
+                startActivity(i);
+
+                Toast.makeText(Datos.this, "error de conexión", Toast.LENGTH_SHORT).show();
 
             }
         }) {
@@ -204,9 +246,11 @@ public class Datos extends AppCompatActivity {
                     if(response.trim().equals("Conciliado correctamente")){
                         iconoDialog.setImageDrawable(ContextCompat.getDrawable(Datos.this, R.drawable.ic_baseline_check));
                         subtituloDialog.setText(response.trim());
+                        btnConciliar.setEnabled(true);
                     }else{
                         iconoDialog.setImageDrawable(ContextCompat.getDrawable(Datos.this, R.drawable.ic_baseline_error_24));
                         subtituloDialog.setText("Error: "+response.trim());
+                        btnConciliar.setEnabled(true);
                     }
 
 

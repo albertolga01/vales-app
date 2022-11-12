@@ -18,7 +18,7 @@
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toEndOf="@+id/TxtPegasus"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -34,6 +34,7 @@
         android:textAlignment="viewEnd"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:visibility="invisible"
         app:layout_constraintStart_toEndOf="@+id/TxtIdPegasus"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,6 +48,7 @@
         android:textAlignment="viewEnd"
         android:textColor="@color/white"
         android:textSize="25sp"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -214,7 +216,7 @@
         android:layout_height="150dp"
         android:layout_marginStart="26dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/ic_favicon_blanco"
+        android:background="@drawable/logogaslp"
         app:layout_constraintEnd_toStartOf="@+id/imgQR"
         app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent"
