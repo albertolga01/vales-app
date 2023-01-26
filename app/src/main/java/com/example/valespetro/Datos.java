@@ -31,6 +31,7 @@ import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.google.zxing.qrcode.QRCodeWriter;
 import com.google.zxing.qrcode.encoder.ByteMatrix;
+import com.grupopetromar.valespetro.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
