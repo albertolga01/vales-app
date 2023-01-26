@@ -20,7 +20,7 @@
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/drawable/spinner_style.xml" value="0.25" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout-v21/activity_login.xml" value="0.14175724637681159" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/activity_datos.xml" value="0.5" />
-        <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/activity_login.xml" value="0.5" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/custom_dialog_continuar.xml" value="0.33" />
         <entry key="..\:/Users/desarrollo/AndroidStudioProjects/ValesPetro/app/src/main/res/layout/spinner_bg.xml" value="0.33" />
@@ -29,7 +29,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

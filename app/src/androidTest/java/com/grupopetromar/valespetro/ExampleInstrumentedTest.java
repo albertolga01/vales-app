@@ -1,4 +1,4 @@
-package com.example.valespetro;
+package com.grupopetromar.valespetro;
 
 import android.content.Context;
 

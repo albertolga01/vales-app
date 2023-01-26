@@ -254,7 +254,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
-        android:text="xxxx5x5x934x25x3xxx7x2xx14x12x3x"
+        android:text="xxxx*x*x***x**x*xxx*x*xx**x**x*x"
         android:textSize="15sp"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
