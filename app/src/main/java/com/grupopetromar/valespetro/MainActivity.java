@@ -16,8 +16,8 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String url = "https://valesgas.grupopetromar.com/apirest/indexapp.php" ;
-    //public static final String url = "https://vales.grupopetromar.com/apirest/indexapp.php" ;
+   // public static final String url = "https://valesgas.grupopetromar.com/apirest/indexapp.php" ;
+    public static final String url = "https://vales.grupopetromar.com/apirest/indexapp.php" ;
 
     Button btnScan, btnContinuar, btnCerrarSesion;
     EditText txtResultado;

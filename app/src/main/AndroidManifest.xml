@@ -6,25 +6,35 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
-        android:icon="@drawable/logogaslp"
+        android:icon="@drawable/valesgasolina"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@drawable/logogaslp"
+        android:roundIcon="@drawable/valesgasolina"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.grupopetromar.valespetro.Datos"
+            android:name=".Menu"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplesVales"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".Datos"
             android:exported="false"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.grupopetromar.valespetro.LoginActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
@@ -35,14 +45,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.grupopetromar.valespetro.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.grupopetromar.valespetro.AnyOrientationCaptureActivity"
+            android:name=".AnyOrientationCaptureActivity"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme"

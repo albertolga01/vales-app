@@ -121,7 +121,7 @@ public class LoginActivity extends AppCompatActivity {
                 // Establecer el valor predeterminado es el estado de inicio de sesión automático
                 automatic_login.setChecked(true);
                 // interfaz de salto
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, Menu.class);
                 LoginActivity.this.startActivity(intent);
                 Toast toast1 = Toast.makeText(getApplicationContext(), "Ya inició sesión automáticamente", Toast.LENGTH_SHORT);
                 Log.e("Inicio sesiónautomático", "Inicio de sesión automático");
@@ -209,7 +209,7 @@ public class LoginActivity extends AppCompatActivity {
                         editor.putBoolean("rem_isCheck", remember_key.isChecked());
                         editor.putBoolean("auto_isCheck", automatic_login.isChecked());
                         editor.commit();
-                        Intent theIntent = new Intent(getApplicationContext(), MainActivity.class);
+                        Intent theIntent = new Intent(getApplicationContext(), Menu.class);
                         startActivity(theIntent);
 
                     }
