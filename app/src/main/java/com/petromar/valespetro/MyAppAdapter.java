@@ -1,4 +1,4 @@
-package com.grupopetromar.valespetro;
+package com.petromar.valespetro;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,8 +11,6 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 //import com.squareup.picasso.Picasso;
-
-import com.android.volley.Response;
 
 import java.util.ArrayList;
 

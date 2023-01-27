@@ -1,4 +1,4 @@
-package com.grupopetromar.valespetro;
+package com.petromar.valespetro;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;

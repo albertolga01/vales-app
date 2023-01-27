@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.grupopetromar.valespetro">
+    package="com.petromar.valespetro">
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -19,22 +19,22 @@
         android:theme="@style/Theme.Design.Light.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Menu"
+            android:name="com.petromar.valespetro.Menu"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".MultiplesVales"
+            android:name="com.petromar.valespetro.MultiplesVales"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:exported="false" />
         <activity
-            android:name=".Datos"
+            android:name="com.petromar.valespetro.Datos"
             android:exported="false"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.petromar.valespetro.LoginActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
@@ -45,12 +45,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.petromar.valespetro.MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AnyOrientationCaptureActivity"
+            android:name="com.petromar.valespetro.AnyOrientationCaptureActivity"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:theme="@style/zxing_CaptureTheme"

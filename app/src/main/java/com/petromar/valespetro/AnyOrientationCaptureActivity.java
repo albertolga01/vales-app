@@ -1,4 +1,4 @@
-package com.grupopetromar.valespetro;
+package com.petromar.valespetro;
 
 import com.journeyapps.barcodescanner.CaptureActivity;
 

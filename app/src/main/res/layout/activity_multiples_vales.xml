@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg_logindos"
-    tools:context="com.grupopetromar.valespetro.MultiplesVales">
+    tools:context="com.petromar.valespetro.MultiplesVales">
 
 
     <Button
