@@ -148,7 +148,7 @@ public class MultiplesVales extends AppCompatActivity {
                 if(!a.contains(result.getContents())){
                     a.add(result.getContents());
                 }
-                progressBar = ProgressDialog.show(MultiplesVales.this,"Cargando","Iniciando sesión",true);
+                progressBar = ProgressDialog.show(MultiplesVales.this,"Cargando","Obteniendo datos",true);
                 mostrarMultiples();
 
 
