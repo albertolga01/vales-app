@@ -16,8 +16,7 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity {
 
-   // public static final String url = "https://valesgas.grupopetromar.com/apirest/indexapp.php" ;
-    public static final String url = "https://vales.grupopetromar.com/apirest/indexapp.php" ;
+   public static final String url = "https://valesgas.grupopetromar.com/apirest/indexapp.php" ;
 
     Button btnScan, btnContinuar, btnCerrarSesion;
     EditText txtResultado;
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 sp.edit().remove("ESTACION").commit();
                 sp.edit().remove("rem_isCheck").commit();
                 sp.edit().remove("auto_isCheck").commit();
-                startActivity(new Intent(getApplicationContext(),LoginActivity.class));
+                startActivity(new Intent(getApplicationContext(),Menu.class));
 
 
             }

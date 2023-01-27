@@ -353,7 +353,7 @@ public class MultiplesVales extends AppCompatActivity {
                 listaArray.add(datosModelo);
             }
 
-            totalTxtView.setText(total.toString());
+            totalTxtView.setText("$" + total.toString());
     } catch (JSONException e) {
         e.printStackTrace();
         Toast.makeText(MultiplesVales.this, "Error", Toast.LENGTH_LONG);    }
