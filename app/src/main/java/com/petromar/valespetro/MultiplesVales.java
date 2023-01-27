@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,7 +53,7 @@ public class MultiplesVales extends AppCompatActivity {
     private RecyclerView recyclerView;
 
     private Dialog dialog;
-
+    ProgressDialog progressBar;
 
     List<String> a = new ArrayList<String>();
     List<String> arrayList = new ArrayList<String>();
@@ -64,7 +66,6 @@ public class MultiplesVales extends AppCompatActivity {
         quemar = findViewById(R.id.btnQuemarMultiple);
         totalTxtView = findViewById(R.id.textViewTotal);
         sp = this.getSharedPreferences("userInfo", Context.MODE_PRIVATE);
-
         recyclerView = findViewById(R.id.contenedor);
 
         btnScan.setOnClickListener(new View.OnClickListener() {
@@ -147,11 +148,10 @@ public class MultiplesVales extends AppCompatActivity {
                 if(!a.contains(result.getContents())){
                     a.add(result.getContents());
                 }
+                progressBar = ProgressDialog.show(MultiplesVales.this,"Cargando","Iniciando sesión",true);
                 mostrarMultiples();
-                System.out.println("array: " + Arrays.deepToString(a.toArray()));
 
 
-                System.out.println("xxxxxxxxxxxxxx");
                 // txtResultado.setText(result.getContents());
             }
         } else {
@@ -170,7 +170,7 @@ public class MultiplesVales extends AppCompatActivity {
         StringRequest MyStringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-
+                progressBar.dismiss();
                 try {
                     System.out.print("_____ObtenerDatosValeMultiple______"+response);
                      JSONObject obj = new JSONObject(response);
@@ -206,6 +206,7 @@ public class MultiplesVales extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 //This code is executed if there is an error.
                 //retornar a main
+                progressBar.dismiss();
                 Intent i = new Intent(MultiplesVales.this, MainActivity.class );
 
                 startActivity(i);
@@ -350,7 +351,7 @@ public class MultiplesVales extends AppCompatActivity {
                 listaArray.add(datosModelo);
             }
 
-            totalTxtView.setText(total.toString());
+            totalTxtView.setText("$" + total.toString());
     } catch (JSONException e) {
         e.printStackTrace();
         Toast.makeText(MultiplesVales.this, "Error", Toast.LENGTH_LONG);    }
