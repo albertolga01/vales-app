@@ -14,7 +14,7 @@
         android:layout_height="228dp"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:background="@drawable/valesgasolina"
+        android:background="@drawable/logogaslprombo"
         android:scaleType="center" />
 
     <androidx.constraintlayout.widget.ConstraintLayout

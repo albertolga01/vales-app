@@ -1,4 +1,4 @@
-package com.petromar.valespetro;
+package com.grupopetromar.valespetro;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -28,6 +28,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.zxing.qrcode.QRCodeWriter;
+import com.grupopetromar.valespetro.R;
+
 
 import org.json.JSONArray;
 import org.json.JSONException;

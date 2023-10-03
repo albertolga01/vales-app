@@ -1,4 +1,4 @@
-package com.petromar.valespetro;
+package com.grupopetromar.valespetro;
 
 import org.junit.Test;
 

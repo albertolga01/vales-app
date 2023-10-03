@@ -3,14 +3,14 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
-        applicationId 'com.petromar.valespetro'
+        applicationId 'com.grupopetromar.valespetro'
         minSdk 19
-        targetSdk 31
-        versionCode 2
-        versionName "1.1"
+        targetSdk 33
+        versionCode 3
+        versionName "1.2"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

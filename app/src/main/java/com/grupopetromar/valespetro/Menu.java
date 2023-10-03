@@ -1,4 +1,4 @@
-package com.petromar.valespetro;
+package com.grupopetromar.valespetro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.grupopetromar.valespetro.R;
 
 public class Menu extends AppCompatActivity {
 

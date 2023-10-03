@@ -1,4 +1,4 @@
-package com.petromar.valespetro;
+package com.grupopetromar.valespetro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,10 +13,11 @@ import android.widget.Toast;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
+import com.grupopetromar.valespetro.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String url = "https://vales.grupopetromar.com/apirest/indexapp.php" ;
+    public static final String url = "https://valesgas.grupopetromar.com/apirest/indexapp.php" ;
 
     Button btnScan, btnContinuar, btnCerrarSesion;
     EditText txtResultado;
@@ -35,10 +36,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                sp.edit().remove("USUARIO").commit();
-                sp.edit().remove("ESTACION").commit();
-                sp.edit().remove("rem_isCheck").commit();
-                sp.edit().remove("auto_isCheck").commit();
                 startActivity(new Intent(getApplicationContext(),Menu.class));
 
 

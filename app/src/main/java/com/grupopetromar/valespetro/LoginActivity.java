@@ -1,4 +1,4 @@
-package com.petromar.valespetro;
+package com.grupopetromar.valespetro;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -28,6 +28,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.grupopetromar.valespetro.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -142,7 +143,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onResponse(String response) {
 
                 try {
-                     System.out.print("_____ObtenerDatos______"+response);
+                     System.out.print("_____ObtenerDatos______Usuario"+response);
                     JSONObject obj = new JSONObject(response);
                     List<String> estaciones = new ArrayList<String>();
                     JSONArray cast = obj.getJSONArray("estaciones");
